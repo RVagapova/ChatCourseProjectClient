@@ -39,3 +39,4 @@
 14.01.2024 14:38:48.394 [Thread-0] INFO   org.example.Client - Nickname lkj send
 14.01.2024 14:38:48.397 [Thread-0] INFO   org.example.Client - Message received from server: lkj: We are welcoming new member lkj
 14.01.2024 14:38:55.430 [Thread-0] INFO   org.example.Client - lkj send message: bye
+14.01.2024 14:42:40.446 [Thread-0] WARN   org.example.Client - Connection with server lost
