@@ -1,5 +1,8 @@
 package org.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -10,6 +13,7 @@ public class Client extends Thread {
     private final BufferedReader reader;
     private final BufferedWriter writer;
     private final Scanner scanner = new Scanner(System.in);
+    public static Logger logger = LoggerFactory.getLogger(Client.class);
 
     public Client() throws IOException {
         InputStream resources = getClass().getClassLoader().getResourceAsStream("properties.yaml");
@@ -30,26 +34,31 @@ public class Client extends Thread {
         String name = null;
         while (true) {
             try {
-                //СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ СЃРµСЂРІРµСЂР°
+                //сообщение от сервера
                 String input = reader.readLine();
                 System.out.println(input);
+                logger.info("Message received from server: " + input);
 
                 String outMsg = scanner.nextLine();
                 if (name == null) {
                     while (outMsg.isEmpty()) {
+                        logger.info("The name not specified");
                         System.out.println("You should complete your nickname");
                         outMsg = scanner.nextLine();
                     }
-                    //РІРІРѕРґ Рё РѕС‚РїСЂР°РІРєР° РёРјРµРЅРё РєР»РёРµРЅС‚Р°
+                    //ввод и отправка имени клиента
                     name = outMsg;
                     writer.write(name + "\n");
                     writer.flush();
+                    logger.info("Nickname " + name + " send");
                 } else {
-                    //РѕС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ
+                    //отправка сообщения
                     writer.write(outMsg + "\n");
                     writer.flush();
+                    logger.info(name + " send message: " + outMsg);
                 }
             } catch (IOException e) {
+                logger.warn("Connection with server lost");
                 throw new RuntimeException(e);
             }
         }
