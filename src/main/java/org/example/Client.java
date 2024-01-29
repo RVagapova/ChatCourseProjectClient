@@ -32,13 +32,10 @@ public class Client extends Thread {
     @Override
     public void run() {
         String name = null;
+        ListenClient listenClient = new ListenClient(reader);
+        listenClient.start();
         while (true) {
             try {
-                //сообщение от сервера
-                String input = reader.readLine();
-                System.out.println(input);
-                logger.info("Message received from server: " + input);
-
                 String outMsg = scanner.nextLine();
                 if (name == null) {
                     while (outMsg.isEmpty()) {
@@ -58,7 +55,7 @@ public class Client extends Thread {
                     logger.info(name + " send message: " + outMsg);
                 }
             } catch (IOException e) {
-                logger.warn("Connection with server lost");
+                logger.warn("Connection with server is lost");
                 throw new RuntimeException(e);
             }
         }

@@ -1,42 +1,14 @@
-14.01.2024 12:22:23.748 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:22:38.675 [Thread-0] INFO   org.example.Client - Nickname null send
-14.01.2024 12:22:38.679 [Thread-0] INFO   org.example.Client - Message received from server: null: We are welcoming new member null
-14.01.2024 12:23:55.696 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:24:03.567 [Thread-0] INFO   org.example.Client - Nickname null send
-14.01.2024 12:24:03.568 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:24:07.577 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:24:16.666 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:24:37.894 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:25:55.089 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:26:00.872 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:26:05.920 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:28:04.133 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:28:44.160 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:28:47.974 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:28:51.007 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:28:55.029 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:29:39.456 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:29:47.311 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:29:52.379 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:33:20.397 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:33:24.171 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:33:28.221 [Thread-0] INFO   org.example.Client - Nickname kil send
-14.01.2024 12:44:01.929 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:44:20.234 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:44:25.014 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:44:29.047 [Thread-0] INFO   org.example.Client - Nickname jik send
-14.01.2024 12:44:29.055 [Thread-0] INFO   org.example.Client - Message received from server: jik: We are welcoming new member jik
-14.01.2024 12:44:34.080 [Thread-0] INFO   org.example.Client - jik send message: hello
-14.01.2024 12:48:56.917 [Thread-0] WARN   org.example.Client - Connection with server lost
-14.01.2024 12:49:24.340 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 12:49:30.186 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 12:49:33.223 [Thread-0] INFO   org.example.Client - Nickname kil send
-14.01.2024 12:49:33.228 [Thread-0] INFO   org.example.Client - Message received from server: kil: We are welcoming new member kil
-14.01.2024 12:49:45.357 [Thread-0] INFO   org.example.Client - kil send message: hello
-14.01.2024 13:11:56.619 [Thread-0] WARN   org.example.Client - Connection with server lost
-14.01.2024 14:38:40.520 [Thread-0] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
-14.01.2024 14:38:44.334 [Thread-0] INFO   org.example.Client - The name not specified
-14.01.2024 14:38:48.394 [Thread-0] INFO   org.example.Client - Nickname lkj send
-14.01.2024 14:38:48.397 [Thread-0] INFO   org.example.Client - Message received from server: lkj: We are welcoming new member lkj
-14.01.2024 14:38:55.430 [Thread-0] INFO   org.example.Client - lkj send message: bye
-14.01.2024 14:42:40.446 [Thread-0] WARN   org.example.Client - Connection with server lost
+29.01.2024 21:43:54.946 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:44:29.425 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:44:54.186 [Thread-0] INFO   org.example.Client - The name not specified
+29.01.2024 21:44:54.214 [Thread-0] INFO   org.example.Client - Nickname hi send
+29.01.2024 21:46:39.864 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:46:43.983 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:46:50.589 [Thread-0] INFO   org.example.Client - The name not specified
+29.01.2024 21:47:08.759 [Thread-0] INFO   org.example.Client - Nickname jack send
+29.01.2024 21:49:21.877 [Thread-0] INFO   org.example.Client - jack send message: hello
+29.01.2024 21:50:35.566 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:50:37.860 [Thread-1] INFO   org.example.Client - Message received from server: Please, enter a unique nickname
+29.01.2024 21:50:43.482 [Thread-0] INFO   org.example.Client - The name not specified
+29.01.2024 21:50:50.547 [Thread-0] INFO   org.example.Client - Nickname kil send
+29.01.2024 21:50:58.606 [Thread-0] INFO   org.example.Client - kil send message: /exit
